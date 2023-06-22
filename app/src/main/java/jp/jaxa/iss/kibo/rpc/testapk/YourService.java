@@ -8,6 +8,7 @@ import jp.jaxa.iss.kibo.rpc.api.KiboRpcService;
 import jp.jaxa.iss.kibo.rpc.testapk.point;
 /**
  * Class meant to handle commands from the Ground Data System and execute them in Astrobee
+ *看activated=>過去打1=>回原點=>過去打2=>回原點=>}五分鐘內重複
  */
 
 public class YourService extends KiboRpcService {
