@@ -3,6 +3,7 @@ package jp.jaxa.iss.kibo.rpc.testapk;
 import gov.nasa.arc.astrobee.types.Point;
 import gov.nasa.arc.astrobee.types.Quaternion;
 
+
 public class point {
     public static Point point1 = new Point(11.2746,-9.92284,5.2988);
     public static Quaternion quaternion1 = new Quaternion(0.0f,0.0f,-0.707f,-0.707f);
@@ -22,7 +23,10 @@ public class point {
     public static Point point6 = new Point(11.355,-8.5518,4.7818);
     public static Quaternion quaternion6 = new Quaternion(0.0f,0.0f,0.0f,1.0f);
 
-    public static Point point7 = new Point(11.369,-8.5518,4.48);
-    public static Quaternion quaternion7 = new Quaternion(0.0f,0.707f,0.0f,0.707f);
+    public static Point pointQ = new Point(11.369,-8.5518,4.48);
+    public static Quaternion quaternionQ = new Quaternion(0.0f,0.707f,0.0f,0.707f);
+
+    public static Point pointgoal = new Point(11.143d, -6.7607d, 4.9654d);
+    public static Quaternion quaterniongoal = new Quaternion(0, 0, -0.707f, 0.707f); //(x,y,z,w) w:cos(theta/2)
 }
 
