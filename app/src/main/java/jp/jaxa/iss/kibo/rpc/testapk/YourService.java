@@ -100,7 +100,7 @@ public class YourService extends KiboRpcService {
         Mat image = api.getMatNavCam();
         api.saveMatImage(image, "nav_QR.jpg");
         // 掃QRcode
-        api.readQRCode()
+        api.readQRCode(image)
 
         // 關燈
         api.flashlightControlFront(0.00f);
