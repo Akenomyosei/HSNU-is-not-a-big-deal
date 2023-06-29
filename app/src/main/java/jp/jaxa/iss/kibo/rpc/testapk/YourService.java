@@ -58,10 +58,11 @@ public class YourService extends KiboRpcService {
 
 
                 Log.i(tn, "move to target"+ target_id);
-                // 拿到照片
+                 // 拿到照片
                 Mat image = api.getMatNavCam();
                 api.saveMatImage(image, "nav"+ target_id +".jpg");
                 n++;
+                
                 //發射雷射光
                 Result r = api.laserControl(true);
                 int numberTry = 3;
@@ -94,8 +95,12 @@ public class YourService extends KiboRpcService {
         api.flashlightControlFront(0.05f);
 
         api.moveTo(point.pointQ,point.quaternionQ,false);
-        // 掃QRcode
 
+         // 拿到照片
+        Mat image = api.getMatNavCam();
+        api.saveMatImage(image, "nav_QR.jpg");
+        // 掃QRcode
+        api.readQRCode()
 
         // 關燈
         api.flashlightControlFront(0.00f);
