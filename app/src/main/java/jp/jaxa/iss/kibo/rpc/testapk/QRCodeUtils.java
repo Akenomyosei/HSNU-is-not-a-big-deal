@@ -26,7 +26,7 @@ public class QRCodeUtils {
     private static Bitmap convertMatToBitmap(Mat mat) {
         Bitmap bitmap;
         if (mat.channels() == 1) {
-            bitmap = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.ARGB_8888);
+            bitmap = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.ALPHA_8);
             Utils.matToBitmap(mat, bitmap);
         } else {
             bitmap = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.RGB_565);
